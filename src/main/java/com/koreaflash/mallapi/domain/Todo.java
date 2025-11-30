@@ -27,6 +27,8 @@ public class Todo {
     private Long tno;
     @Column(length = 500, nullable = false)
     private String title;
+    @Column(length = 2000)
+    private String content;
     private String writer;
     private boolean complete;
     private LocalDate dueDate;
